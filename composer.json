@@ -1,0 +1,15 @@
+{
+	"name" : "alvarga/logger",
+	"description" : "Write log to database",
+	"homepage" : "https://github.com/alvarga/logger",
+	"license" : "BSD-2-Clause",
+	"authors" : [{
+			"name" : "Alen Varga",
+			"email" : "perokc@gmail.com"
+		}
+	],
+	"keywords" : [
+		"Log",
+		"logger"
+	]
+}
