@@ -11,5 +11,18 @@
 	"keywords" : [
 		"Log",
 		"logger"
-	]
+	],
+	"config" : {
+		"sort-packages" : true
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Logger\\" : "src/Logger"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Logger\\Tests\\" : "tests/Logger/Tests"
+		}
+	}
 }
