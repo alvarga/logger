@@ -3,9 +3,9 @@ namespace Logger\Infrastructure\Domain\Model\Log;
 
 use Logger\Domain\Model\Log\LogRepositoryInterface;
 use Logger\Domain\Model\Log\Log;
-use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityRepository;
 
-class DoctrineLogRepository extends EntityManager implements LogRepositoryInterface
+class DoctrineLogRepository extends EntityRepository implements LogRepositoryInterface
 {
     /**
      * 
