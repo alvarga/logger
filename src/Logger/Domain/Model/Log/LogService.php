@@ -76,7 +76,7 @@ class LogService
     private function generateLog($type, $details, $service)
     {
         $detailsArr = array();
-        $logObj = new Log(new \DateTime(), $type, self::TYPE_DESCRIPTION[$type], $service);
+        $logObj = new Log(new \DateTime(), $type, self::TYPE_DESCRIPTION[$type], get_class($service));
         if(count($details) > 0)
         {
             foreach($details as $key => $value)
