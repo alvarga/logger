@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildpath>
-	<buildpathentry external="true" kind="lib" path="D:/www/monolog"/>
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
-	<buildpathentry external="true" kind="lib" path="D:/www/PPA_DDD/vendor/doctrine"/>
 	<buildpathentry kind="src" path=""/>
 </buildpath>
