@@ -81,7 +81,9 @@ class LogService
         {
             foreach($details as $key => $value)
             {
-                $detailsArr[] = new Detail($logObj, $key, $value);
+                if($value !== null){
+                    $detailsArr[] = new Detail($logObj, $key, $value);
+                }
             }
             $logObj->setDetails($detailsArr);
         }
