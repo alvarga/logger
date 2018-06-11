@@ -17,5 +17,7 @@ interface LogRepositoryInterface
      * return Log
      */
     public function ofId($id);
+    
+    public function setIdTable($idTable);
 }
 

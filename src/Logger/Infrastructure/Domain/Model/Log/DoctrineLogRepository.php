@@ -7,6 +7,8 @@ use Doctrine\ORM\EntityRepository;
 
 class DoctrineLogRepository extends EntityRepository implements LogRepositoryInterface
 {
+    private $idTable;
+    
     /**
      *
      * {@inheritDoc}
@@ -42,6 +44,16 @@ class DoctrineLogRepository extends EntityRepository implements LogRepositoryInt
     public function ofId($id)
     {
         return $this->find($id);
+    }
+    
+    /**
+     * 
+     * {@inheritDoc}
+     * @see \Logger\Domain\Model\Log\LogRepositoryInterface::setIdTable()
+     */
+    public function setIdTable($idTable)
+    {
+        $this->idTable = $idTable;
     }
 }
 
