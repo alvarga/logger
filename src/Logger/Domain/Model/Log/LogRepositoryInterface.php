@@ -11,5 +11,11 @@ interface LogRepositoryInterface
      *   @param Log $log
      */
     public function remove(Log $log);
+    
+    /**
+     * @param integer $id
+     * return Log
+     */
+    public function ofId($id);
 }
 
